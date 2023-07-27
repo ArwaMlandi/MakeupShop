@@ -1,0 +1,109 @@
+.container_slide{
+    position: relative;
+}
+.container_slide .swiper{
+    width: 80%;
+    height: 10rem;
+    position: unset;
+    margin-bottom: 20px;
+}
+.container_slide .swiper-slide{
+    background-color: white;
+    display: flex;
+    border-radius: 12px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+}
+.container_slide .swiper-button-prev{
+    left: 2rem;
+    color: black;
+}
+.container_slide .swiper-button-next{
+    right: 2rem;
+    color: black;
+}
+.slide_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name>:nth-child(1){
+    font-weight: 600;
+    font-size: 1rem;
+}
+.name>:nth-child(2){
+    font-size: 0.7rem;
+}
+.slide_left>:nth-child(2){
+    font-weight: bold;
+    font-size: 1rem;
+}
+.slide_left>:nth-child(3){
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 17px;
+    width: max-content;
+    font-size: 0.8rem;
+}
+.slide_left>:nth-child(3):hover{
+    background-color: rgb(255, 230, 86);
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+}
+.img_prod{
+transform: rotate(-20deg);
+position: absolute;
+right: 0;
+width: 40%;
+height: 100%;
+bottom: -20px;
+}
+
+
+@media screen and (max-width:640px) {
+    .container_slide .swiper{
+        width: 90%;
+        height: 10rem;
+
+    }
+    .container_slide .swiper-button-next,
+     .container_slide .swiper-button-prev{
+        display: none;
+    }
+    .name>:nth-child(1){
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .name>:nth-child(2){
+        font-size: 0.5rem;
+    }
+    
+    .slide_left>:nth-child(3){
+        border: 1px solid black;
+        
+       
+        width: max-content;
+        font-size: 10px;
+    }
+    .slide_left>:nth-child(3):hover{
+        background-color: rgb(255, 230, 86);
+        cursor: pointer;
+        transition: all 0.5 ease-in-out;
+    }
+    .img_prod{
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 40%;
+    bottom: 60px;
+    }
+    
+}

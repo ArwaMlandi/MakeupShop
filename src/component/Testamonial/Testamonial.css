@@ -1,0 +1,122 @@
+.testamonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+.wraper_test{
+    display: grid;
+    align-items: flex-end;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.yellow_circle>img{
+    width: 20rem;
+    justify-self: center;
+}
+.container_test{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container_test>:nth-child(1){
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
+.container_test>:nth-child(2){
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: block;
+    
+
+}
+.wraper_test>:nth-child(3){
+    text-align: right;
+}
+.yellow_circle{
+    
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        z-index: -99;
+       
+        right: 100px;
+        background-color:rgb(253, 237, 146);
+    
+}
+.review{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3rem;
+}
+.carousol{
+    width: 100%;
+}
+.test_carsoul{
+    padding: 1rem;
+}
+.testamonial_review{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    cursor:grab
+}
+.testamonial_review>hr{
+    height: 1px;
+    width: 80%;
+    background-color: gainsboro;
+}
+
+@media screen and (max-width:640px) {
+    .container_test>:nth-child(1){
+        font-size: 1.2rem;
+text-align: center;
+    }
+    .container_test>:nth-child(2){
+        font-size: 0.8rem;
+        text-transform: lowercase;
+        text-align: center;
+    }
+    .wraper_test{
+        grid-template-columns: 1fr;
+    }
+    .yellow_circle{
+        width: 10rem;
+        height: 10rem;
+        margin: 8px 0px 8px 70px;
+       
+    }
+    .yellow_circle>img{
+        width: 10rem;
+       left: 60px;
+    }
+    .review{
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media  (min-width:640px) and (max-width:768px) {
+
+    .yellow_circle{
+        width: 10rem;
+        height: 10rem;
+        margin: 8px 0px 8px 170px;
+    }
+    .yellow_circle>img{
+        width: 10rem;
+       left: 60px;
+    }
+
+}
